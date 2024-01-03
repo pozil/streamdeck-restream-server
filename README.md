@@ -6,8 +6,8 @@ Server for the unofficial Elgato Stream Deck plugin that controls Restream Studi
 
 This solution requires three components to run:
 1. A Node.js server (this project)
-1. A Chrome extension
-1. A [Stream Deck plugin](https://github.com/pozil/streamdeck-restream-plugin)
+1. [A Chrome extension](https://github.com/pozil/restream-chrome-extension)
+1. [A Stream Deck plugin](https://github.com/pozil/streamdeck-restream-plugin)
 
 ## Server Setup
 
@@ -26,4 +26,4 @@ This solution requires three components to run:
     npm start
     ```
 
-Now that the server is up and running, install the Chrome extension.
+Now that the server is up and running, install the [Chrome extension](https://github.com/pozil/restream-chrome-extension).
