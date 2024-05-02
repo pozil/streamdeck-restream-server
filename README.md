@@ -30,6 +30,13 @@ This solution requires three components to run:
     npm start
     ```
 
+If you want to use a custom port, you can specify it when starting the server by setting the environment variable PORT. For example, to start the server on port 8080:
+
+    PORT=8080 npm start
+
+Replace 8080 with your desired port number. 
+The server will start and listen on that port.
+
 ## Chrome Extension Setup
 
 Install the [Chrome extension](https://chromewebstore.google.com/u/1/detail/restream-studio-controls/aljahkhjciggopmeccklmohhagoinpal?hl=en) from the Chrome Web Store.

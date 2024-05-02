@@ -4,8 +4,9 @@ import url from 'node:url';
 const CLIENT_BROWSER = 'browser';
 const CLIENT_STREAMDECK = 'streamdeck';
 
-console.log('Starting WSS on port 5000');
-const wss = new WebSocketServer({ port: 5000 });
+const port = process.env.PORT || 5000;
+console.log(`Starting WSS on port ${port}`);
+const wss = new WebSocketServer({ port });
 
 let browserClient, sdClient;
 
