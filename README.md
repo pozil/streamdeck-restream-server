@@ -15,7 +15,7 @@ This solution requires three components to run:
 
 1. Download or clone the [Node.js server repository](https://github.com/pozil/streamdeck-restream-server).
 
-1. Ensure that you have [Node.js](https://nodejs.org/en) v20 or above by running this command in a terminal:
+1. Ensure that you have [Node.js](https://nodejs.org/en) v22 or above by running this command in a terminal:
     ```sh
     node -v
     ```
