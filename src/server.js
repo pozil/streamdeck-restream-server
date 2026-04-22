@@ -1,5 +1,4 @@
 import { WebSocketServer } from 'ws';
-import url from 'node:url';
 
 const CLIENT_BROWSER = 'browser';
 const CLIENT_STREAMDECK = 'streamdeck';
@@ -32,8 +31,9 @@ function handleMessages(sourceClientType, data) {
 }
 
 wss.on('connection', (ws, req) => {
-  const reqParams = url.parse(req.url, true);
-  const clientType = reqParams.query['client-type'];
+  const url = new URL(req.url, `https://${req.headers.host}/`);
+  const query = new URLSearchParams(url.search);
+  const clientType = query.get('client-type');
   console.log(`WS client connected: ${clientType}`);
   
   // Save client references
