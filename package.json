@@ -1,6 +1,6 @@
 {
   "name": "streamdeck-restream-server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Server for the Restream Streamdeck plugin",
   "author": "pozil",
   "license": "CC0-1.0",
@@ -14,9 +14,9 @@
     "node": ">=22"
   },
   "volta": {
-    "node": "22.16.0"
+    "node": "24.15.0"
   },
   "dependencies": {
-    "ws": "^8.18.2"
+    "ws": "^8.20.0"
   }
 }
